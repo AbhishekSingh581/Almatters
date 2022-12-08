@@ -7,9 +7,9 @@ To start Backend:
 ---> nodemon server
 
 
-.env file:
+.env file: 
 Make a file .env in which
 
-MENTORSHALA_DB_URI= YOUR_CLUSTER_URL
-MENTORSHALA_NS= YOUR_DATABASE_NAME
+MENTORSHALA_DB_URI= YOUR_CLUSTER_URL, 
+MENTORSHALA_NS= YOUR_DATABASE_NAME, 
 PORT=5000
