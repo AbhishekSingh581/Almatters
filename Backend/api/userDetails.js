@@ -1,7 +1,7 @@
 import express from "express"
 // import MentorShalaDAO from './dao/MentorShalaDAO.js'
 import usersDetailsCtrl from "./controller/fetchController.js"
-import postFeedCtrl from "./controller/postController.js"
+import postCtrl from "./controller/postController.js"
 import updateFeedCtrl from "./controller/updateController.js"
 import multer from 'multer'
 // import GridFsStorage from 'multer-gridfs-storage'
@@ -13,13 +13,18 @@ const router=express.Router()
 
 router.route("/getFeeds").get(async(req,res)=>{
     const data=await usersDetailsCtrl.getapiFeeds()
-    console.log(data);
+    // console.log(data);
     res.send(data)
+})
+
+router.post("/getUsers",upload.single('media'),async(req,res)=>{
+    // console.log(req.body);
+    res.send(false)
 })
 router.post("/postFeeds",upload.single('media'),async(req,res)=>{
 
-    console.log(req.body);
-    console.log(req.file);
+    // console.log(req.body);
+    // console.log(req.file);
     if(req.file!=undefined){
 
         const obj={
@@ -30,7 +35,7 @@ router.post("/postFeeds",upload.single('media'),async(req,res)=>{
             "caption":req.body.caption,
             "like":0
         }
-        await postFeedCtrl.postapiFeeds(obj)
+        await postCtrl.postapiFeeds(obj)
     }
     else{
         const obj={
@@ -40,9 +45,12 @@ router.post("/postFeeds",upload.single('media'),async(req,res)=>{
             "caption":req.body.caption,
             "like":0
         }
-        await postFeedCtrl.postapiFeeds(obj)
+        await postCtrl.postapiFeeds(obj)
     }
     
+})
+router.post("/addNewUser",upload.single('media'),async(req,res)=>{
+    console.log(req.body);
 })
 router.post("/feedliked",upload.single('media'),async(req,res)=>{
 

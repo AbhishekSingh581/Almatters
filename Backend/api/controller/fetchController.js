@@ -12,4 +12,7 @@ export default class usersDetailsCtrl{
             return []
         }
     }
+    static async getapiUsers(){
+        
+    }
 }

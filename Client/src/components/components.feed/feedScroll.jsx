@@ -17,7 +17,7 @@ const FeedScroll=()=>{
       .catch(err=>{
         console.log(err);
       })
-    })
+    },[])
     // const FeedData=dbData.reverse()
     const likeFeed=async(noOflike,caption)=>{
         // console.log(noOflike);
@@ -41,7 +41,7 @@ const FeedScroll=()=>{
                         <Card className="feed-card">
                             <div className="feed-cardHeader">
                                 <div className="cardHeader-image">
-                                    <img src={feed.profile_image}></img>
+                                    <img src={feed.profile_image} alt="image"></img>
                                 </div>
                                 <div className="cardHeader-title">
                                     <div className="cardHeader-title-name">
@@ -53,7 +53,7 @@ const FeedScroll=()=>{
                                 </div>
                             </div>
                             <div className="feed-cardMedia">
-                                <img src={`http://localhost:5000/${feed.media}`}>
+                                <img src={`http://localhost:5000/${feed.media}`} alt="image">
                                 </img>
                                 {/* {console.log(`http://localhost:5000/${feed.media}`)} */}
                             </div>

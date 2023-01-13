@@ -40,7 +40,7 @@ const CreatePost=()=>{
             <div id='createPost-container' className={dialogBox?"not-active":""}>
                 <Card id="createPost-card">
                     <div className="card-image">
-                        <img src={profile_image}></img>
+                        <img src={profile_image} alt="image"></img>
                     </div>
                     <div className="card-createPost">
                         <button onClick={()=>{setDialogBox(true)}}>Create+</button>
