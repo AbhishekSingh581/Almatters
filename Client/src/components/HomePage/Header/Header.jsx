@@ -91,7 +91,8 @@ const Header = () => {
           <div data-aos="fade-right"> more than its</div>
           <div data-aos="fade-up">Alumni</div>
         </div>
-      
+        
+
     </div>
   )
 }

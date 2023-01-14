@@ -124,11 +124,63 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
+  #header-main-container{
+    border: 1px solid red;  
+    height: 130vh;
+    /* position: relative; */
+    content-visibility: auto;
+  }
   #headinginSubHeading{
     /* border: 1px solid blue; */
     position: absolute;
-    bottom: 10%;
+    bottom: 50%;
+    left: 3%;
+  }
+  #headinginSubHeading div:nth-child(1){
+    /* border: 1px solid red; */
+    font-size: 0.5em;
+    color: #ffff;
+  }
+  #headinginSubHeading div:nth-child(2){
+    /* border: 1px solid green; */
+    font-size: 2.5rem;
+    -webkit-text-stroke: 3px white;
+    font-family: sans-serif;
+    color: transparent;
+  }
+  #headinginSubHeading div:nth-child(3){
+    /* border: 1px solid red; */
+    font-size: 3.5rem;
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 3px white;
+    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #loginForm-Div{
+    bottom: 0%;
+    height: 40%;
+    width: 100%;
+    left: 2%;
+  }
+  
+}
+@media screen and (min-width: 400px) and (max-width: 480px) {
+  #header-main-container{
+    border: 1px solid red;  
+    height: 150vh;
+    /* position: relative; */
+    content-visibility: auto;
+  }
+  #headinginSubHeading{
+    /* border: 1px solid blue; */
+    position: absolute;
+    bottom: 60%;
     left: 3%;
   }
   #headinginSubHeading div:nth-child(1){
@@ -138,7 +190,7 @@
   }
   #headinginSubHeading div:nth-child(2){
     /* border: 1px solid green; */
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     -webkit-text-stroke: 3px white;
     font-family: sans-serif;
     color: transparent;
@@ -157,14 +209,24 @@
     -webkit-text-fill-color: transparent;
   }
   #loginForm-Div{
-    display: none;
+    bottom: 0%;
+    height: 40%;
+    width: 100%;
+    left: 2%;
   }
+  
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 580px) {
+  #header-main-container{
+    border: 1px solid red;  
+    height: 150vh;
+    /* position: relative; */
+    content-visibility: auto;
+  }
   #headinginSubHeading{
     /* border: 1px solid blue; */
     position: absolute;
-    bottom: 10%;
+    bottom: 55%;
     left: 3%;
   }
   #headinginSubHeading div:nth-child(1){
@@ -193,31 +255,48 @@
     -webkit-text-fill-color: transparent;
   }
   #loginForm-Div{
-    display: none;
+    bottom: 0%;
+    height: 40%;
+    width: 100%;
+    left: 2%;
   }
+  
 }
-@media screen and (min-width: 580px) {
+@media screen and (min-width:580px) and (max-width: 780px) {
+  #header-main-container{
+    border: 1px solid red;  
+    height: 170vh;
+    /* position: relative; */
+    content-visibility: auto;
+  }
+  #loginForm-Div{
+    bottom: 0%;
+    height: 40%;
+    width: 50%;
+    left: 20%;
+  }
+  
   #headinginSubHeading{
     /* border: 1px solid blue; */
     position: absolute;
-    bottom: 10%;
+    bottom: 60%;
     left: 3%;
   }
   #headinginSubHeading div:nth-child(1){
     /* border: 1px solid red; */
-    font-size: 2.5em;
+    font-size: 2em;
     color: #ffff;
   }
   #headinginSubHeading div:nth-child(2){
     /* border: 1px solid green; */
-    font-size: 9.5rem;
+    font-size: 6rem;
     -webkit-text-stroke: 3px white;
     font-family: sans-serif;
     color: transparent;
   }
   #headinginSubHeading div:nth-child(3){
     /* border: 1px solid red; */
-    font-size: 11.5rem;
+    font-size: 9rem;
     display: inline-block;
     margin: 0;
     line-height: 1em;
@@ -228,15 +307,26 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  #loginForm-Div{
-    display: none;
-  }
+  
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width:780px) and (max-width: 980px) {
+  #header-main-container{
+    border: 1px solid red;  
+    height: 170vh;
+    /* position: relative; */
+    content-visibility: auto;
+  }
+  #loginForm-Div{
+    bottom: 0%;
+    height: 40%;
+    width: 50%;
+    left: 20%;
+  }
+  
   #headinginSubHeading{
     /* border: 1px solid blue; */
     position: absolute;
-    bottom: 7%;
+    bottom: 50%;
     left: 3%;
   }
   #headinginSubHeading div:nth-child(1){
@@ -264,9 +354,54 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  #loginForm-Div{
-    display: block;
+  
+}
+@media screen and (min-width:980px) and (max-width: 1290px) {
+  #header-main-container{
+    border: 1px solid red;  
+    height: 170vh;
+    /* position: relative; */
+    content-visibility: auto;
   }
+  #loginForm-Div{
+    bottom: 0%;
+    height: 40%;
+    width: 50%;
+    left: 20%;
+  }
+  
+  #headinginSubHeading{
+    /* border: 1px solid blue; */
+    position: absolute;
+    bottom: 50%;
+    left: 3%;
+  }
+  #headinginSubHeading div:nth-child(1){
+    /* border: 1px solid red; */
+    font-size: 2em;
+    color: #ffff;
+  }
+  #headinginSubHeading div:nth-child(2){
+    /* border: 1px solid green; */
+    font-size: 8.5rem;
+    -webkit-text-stroke: 3px white;
+    font-family: sans-serif;
+    color: transparent;
+  }
+  #headinginSubHeading div:nth-child(3){
+    /* border: 1px solid red; */
+    font-size: 10.5rem;
+    display: inline-block;
+    margin: 0;
+    line-height: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 3px white;
+    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
 }
 #loginForm div{
   /* border: 1px solid green; */
