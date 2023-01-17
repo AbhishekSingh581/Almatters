@@ -1,460 +1,95 @@
 #header-main-container{
   /* border: 1px solid red;   */
   height: 100vh;
-  /* position: relative; */
-  content-visibility: auto;
-}
-#header-sub-container{
-    /* border: 1px solid red; */
-    height: 100%;
-    /* background: #4681f4; */
-    background: linear-gradient( rgba(0, 0, 0, 0.5 ), rgba(0, 0, 0, 0.5) ),url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size: cover; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position:center 30%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5 ), rgba(0, 0, 0, 0.5) ),url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position:center 30%;
   opacity: 1;
   position: relative;
-}
-#loginForm-Div{
-  position: absolute;
-  bottom: 5%;
-  right: 15%;
-  width: 25%;   
-  height: 80%;
-  background: #ffff;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 10px;
-  background-color: rgba(255,255,255,0.01);
-    /* transform: translate(-50%,-50%); */
-    
-    /* border-radius: 10px; */
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    /* padding: 50px 35px; */
-}
-#loginFormHeading{
-  /* border: 1px solid red; */
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  border-radius: 10px 10px 0px 0px;
-  height: 10%;  
-}
-#loginFormHeading button{
-  width: 50%;
-  /* border-style: none; */
-  background: transparent;
-  border: 0.5px solid rgba(0, 0, 0, 0.2);
-}
-#loginFormHeading button{
-  font-weight: 400;
-  font-size: large;
-}
-#loginFormHeading button:active{
-  border-style: none;
+  padding: clamp(1rem,10vh + 1rem, 6rem) 0 0 0;
 }
 
-#loginBtnForForm{
-  border-radius: 10px 0px 0px 0px;
-  color: #ffff;
-}
-#signUpBtnForForm{
-  border-radius: 0px 10px 0px 0px;
-  color: #ffff;
-}
-#mainFormPart{
-  height: 90%;
-  border-radius: 0px 0px 10px 10px;
+#header-flex{
   display: flex;
-    align-items: center;
+  /* border: 1px solid blue; */
+  min-height: 100%;
+  justify-content: space-around;
+  padding: clamp(1rem,1vw + 1rem,4rem);
+}
+@media screen and (max-width:780px) {
+  #header-flex{
+    display: flex;
+    /* border: 1px solid blue; */
+    min-height: 100%;
+    justify-content: space-around;
     flex-direction: column;
-    flex-wrap: wrap;
-    white-space: wrap;
-    overflow-x: hidden;
-}
-#mainFormPart .radioBtn{
-  display: none;
-}
-.divInMainForm{
-  /* border: 1px solid red; */
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-}
-#radio1:checked ~ .first-divMainForm{
-  margin-left: 0%;
-}
-#radio2:checked ~ .first-divMainForm{
-  margin-left: -100%;
+  }
 }
 #headinginSubHeading{
-  /* border: 1px solid blue; */
-  position: absolute;
-  bottom: 4.5%;
-  left: 3%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(0.2rem,1.0vw + 0rem,4rem);
 }
 #headinginSubHeading div:nth-child(1){
   /* border: 1px solid red; */
-  font-size: 2rem;
+  font-size: clamp(0.4rem, 1.0vw + 1rem, 8rem);;
   color: #ffff;
 }
 #headinginSubHeading div:nth-child(2){
   /* border: 1px solid green; */
-  font-size: 8rem;
-  -webkit-text-stroke: 3px white;
+  font-size: clamp(2.5rem, 6.5vw + 1rem, 10rem);;
+  -webkit-text-stroke: 1px white;
   font-family: sans-serif;
   color: transparent;
 }
 #headinginSubHeading div:nth-child(3){
   /* border: 1px solid red; */
-  font-size: 10rem;
-  display: inline-block;
-  margin: 0;
-  line-height: 1em;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  -webkit-text-stroke: 3px white;
-  background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: clamp(2.5rem, 6.5vw + 1rem, 10rem); 
+  font-family: sans-serif;
+  color: white;
 }
-@media screen and (max-width: 400px) {
-  #header-main-container{
-    border: 1px solid red;  
-    height: 130vh;
-    /* position: relative; */
-    content-visibility: auto;
-  }
-  #headinginSubHeading{
-    /* border: 1px solid blue; */
-    position: absolute;
-    bottom: 50%;
-    left: 3%;
-  }
-  #headinginSubHeading div:nth-child(1){
-    /* border: 1px solid red; */
-    font-size: 0.5em;
-    color: #ffff;
-  }
-  #headinginSubHeading div:nth-child(2){
-    /* border: 1px solid green; */
-    font-size: 2.5rem;
-    -webkit-text-stroke: 3px white;
-    font-family: sans-serif;
-    color: transparent;
-  }
-  #headinginSubHeading div:nth-child(3){
-    /* border: 1px solid red; */
-    font-size: 3.5rem;
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 3px white;
-    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  #loginForm-Div{
-    bottom: 0%;
-    height: 40%;
-    width: 100%;
-    left: 2%;
-  }
-  
-}
-@media screen and (min-width: 400px) and (max-width: 480px) {
-  #header-main-container{
-    border: 1px solid red;  
-    height: 150vh;
-    /* position: relative; */
-    content-visibility: auto;
-  }
-  #headinginSubHeading{
-    /* border: 1px solid blue; */
-    position: absolute;
-    bottom: 60%;
-    left: 3%;
-  }
-  #headinginSubHeading div:nth-child(1){
-    /* border: 1px solid red; */
-    font-size: 1.5em;
-    color: #ffff;
-  }
-  #headinginSubHeading div:nth-child(2){
-    /* border: 1px solid green; */
-    font-size: 4.5rem;
-    -webkit-text-stroke: 3px white;
-    font-family: sans-serif;
-    color: transparent;
-  }
-  #headinginSubHeading div:nth-child(3){
-    /* border: 1px solid red; */
-    font-size: 6.5rem;
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 3px white;
-    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  #loginForm-Div{
-    bottom: 0%;
-    height: 40%;
-    width: 100%;
-    left: 2%;
-  }
-  
-}
-@media screen and (max-width: 580px) {
-  #header-main-container{
-    border: 1px solid red;  
-    height: 150vh;
-    /* position: relative; */
-    content-visibility: auto;
-  }
-  #headinginSubHeading{
-    /* border: 1px solid blue; */
-    position: absolute;
-    bottom: 55%;
-    left: 3%;
-  }
-  #headinginSubHeading div:nth-child(1){
-    /* border: 1px solid red; */
-    font-size: 1.5em;
-    color: #ffff;
-  }
-  #headinginSubHeading div:nth-child(2){
-    /* border: 1px solid green; */
-    font-size: 5.5rem;
-    -webkit-text-stroke: 3px white;
-    font-family: sans-serif;
-    color: transparent;
-  }
-  #headinginSubHeading div:nth-child(3){
-    /* border: 1px solid red; */
-    font-size: 7.5rem;
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 3px white;
-    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  #loginForm-Div{
-    bottom: 0%;
-    height: 40%;
-    width: 100%;
-    left: 2%;
-  }
-  
-}
-@media screen and (min-width:580px) and (max-width: 780px) {
-  #header-main-container{
-    border: 1px solid red;  
-    height: 170vh;
-    /* position: relative; */
-    content-visibility: auto;
-  }
-  #loginForm-Div{
-    bottom: 0%;
-    height: 40%;
-    width: 50%;
-    left: 20%;
-  }
-  
-  #headinginSubHeading{
-    /* border: 1px solid blue; */
-    position: absolute;
-    bottom: 60%;
-    left: 3%;
-  }
-  #headinginSubHeading div:nth-child(1){
-    /* border: 1px solid red; */
-    font-size: 2em;
-    color: #ffff;
-  }
-  #headinginSubHeading div:nth-child(2){
-    /* border: 1px solid green; */
-    font-size: 6rem;
-    -webkit-text-stroke: 3px white;
-    font-family: sans-serif;
-    color: transparent;
-  }
-  #headinginSubHeading div:nth-child(3){
-    /* border: 1px solid red; */
-    font-size: 9rem;
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 3px white;
-    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-}
-@media screen and (min-width:780px) and (max-width: 980px) {
-  #header-main-container{
-    border: 1px solid red;  
-    height: 170vh;
-    /* position: relative; */
-    content-visibility: auto;
-  }
-  #loginForm-Div{
-    bottom: 0%;
-    height: 40%;
-    width: 50%;
-    left: 20%;
-  }
-  
-  #headinginSubHeading{
-    /* border: 1px solid blue; */
-    position: absolute;
-    bottom: 50%;
-    left: 3%;
-  }
-  #headinginSubHeading div:nth-child(1){
-    /* border: 1px solid red; */
-    font-size: 2em;
-    color: #ffff;
-  }
-  #headinginSubHeading div:nth-child(2){
-    /* border: 1px solid green; */
-    font-size: 8.5rem;
-    -webkit-text-stroke: 3px white;
-    font-family: sans-serif;
-    color: transparent;
-  }
-  #headinginSubHeading div:nth-child(3){
-    /* border: 1px solid red; */
-    font-size: 10.5rem;
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 3px white;
-    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-}
-@media screen and (min-width:980px) and (max-width: 1290px) {
-  #header-main-container{
-    border: 1px solid red;  
-    height: 170vh;
-    /* position: relative; */
-    content-visibility: auto;
-  }
-  #loginForm-Div{
-    bottom: 0%;
-    height: 40%;
-    width: 50%;
-    left: 20%;
-  }
-  
-  #headinginSubHeading{
-    /* border: 1px solid blue; */
-    position: absolute;
-    bottom: 50%;
-    left: 3%;
-  }
-  #headinginSubHeading div:nth-child(1){
-    /* border: 1px solid red; */
-    font-size: 2em;
-    color: #ffff;
-  }
-  #headinginSubHeading div:nth-child(2){
-    /* border: 1px solid green; */
-    font-size: 8.5rem;
-    -webkit-text-stroke: 3px white;
-    font-family: sans-serif;
-    color: transparent;
-  }
-  #headinginSubHeading div:nth-child(3){
-    /* border: 1px solid red; */
-    font-size: 10.5rem;
-    display: inline-block;
-    margin: 0;
-    line-height: 1em;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    -webkit-text-stroke: 3px white;
-    background: linear-gradient(to top, rgb(0, 0, 0,0.75) 50%, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-}
-#loginForm div{
-  /* border: 1px solid green; */
-  margin: 5% 2%;
-}
-#loginForm h3{
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
-}
-#loginForm div{
+
+
+#loginForm-Div{
+  /* border: 1px solid red; */
+  width: 18rem;
+  height: auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#loginForm div label{
-  display: block;
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffff;
-}
-#loginForm input{
-  display: block;
-  height: 50px;
+
+#loginForm-Div form{
   width: 100%;
-  background-color: transparent;
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
-  outline: 0;
-  border-width: 0 0 1px;
-  border-color: #ffffff;
-  margin: 0% 5%;
+  /* border: 1px solid red; */
+}
+#loginForm-Div form input{
+  width: 100%;
+  margin: clamp(2rem,3vh + 0.5rem,7rem) 0;
+  background: transparent;
   color: #ffff;
+  border-style: none;
+  border-bottom: 1px solid #ffff;
 }
 ::placeholder{
   color: #e5e5e5;
   /* border: 1px solid red; */
 }
-#loginForm  input[type="submit"]{
-  margin-top: 50px;
+#loginForm-Div form input:focus{
   width: 100%;
+  margin: clamp(2rem,3vh + 0.5rem,7rem) 0;
   background: transparent;
   color: #ffff;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid #ffff;
-  text-align: center;
+  border-style: none;
+  border-bottom: 1px solid #ffff;
+}
+#loginForm-Div form input[type="submit"]{
+  border: 1px solid #ffff;
 }
 #loginForm  input[type="submit"]:hover{
   background-color: rgba(255,255,255,0.47);
@@ -462,86 +97,19 @@
 }
 .social{
   /* border: 1px solid red; */
-margin-top: 30px;
-display: flex;
-justify-content: center;
+  margin-top: clamp(0.2rem,0.7rem,2rem);
+  display: flex;
+  justify-content: center;
 }
 .social div{
-background: red;
-width: 150px;
-border-radius: 3px;
-padding: 5px 10px 10px 5px;
-background-color: rgba(255,255,255,0.27);
-color: #eaf0fb;
-text-align: center;
-}
-.social div:hover{
-background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-margin-left: 25px;
-}
-.social div span{
-  margin: 0% 4%;
-}
-#signUpForm div{
-  /* border: 1px solid green; */
-  margin: 5% 2%;
-}
-#signUpForm h3{
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
-}
-#signUpForm div{
-  display: flex;
-  margin: 2% 4%;
-}
-#signUpForm div label{
-  display: block;
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffff;
-}
-#signUpForm input{
-  display: block;
-  height: 50px;
-  width: 100%;
-  background-color: transparent;
+  /* background: red; */
+  width: 150px;
   border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
-  outline: 0;
-  border-width: 0 0 1px;
-  border-color: #ffffff;
-  margin: 0% 5%;
-  color: #ffff;
-}
-::placeholder{
-  color: #e5e5e5;
-  /* border: 1px solid red; */
-}
-#signUpForm  input[type="submit"]{
-  margin-top: 50px;
-  width: 100%;
-  background: transparent;
-  color: #ffff;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid #ffff;
-}
-#signUpForm  input[type="submit"]:hover{
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+  }
+  .social div:hover{
   background-color: rgba(255,255,255,0.47);
-
-}
-#alertMsg{
-  color: red;
-  margin: 0% 5%;
-}
+  }

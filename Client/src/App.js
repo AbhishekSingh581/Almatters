@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import MainPage from './components/main';
 import HomePage from './components/HomePage/HomePage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Registration from './components/Registration/Registration';
+// import Registration from './components/Registration/Registration';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Route path="/" element={<HomePage/>}>
       </Route>
       <Route path="/feed" element={<MainPage/>} />
-      <Route path="/personalInformation" element={<Registration/>} />
+      {/* <Route path="/personalInformation" element={<Registration/>} /> */}
       
     </Routes>
   </BrowserRouter>
