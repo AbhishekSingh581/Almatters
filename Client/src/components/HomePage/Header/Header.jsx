@@ -2,8 +2,6 @@ import React from 'react'
 // import { useState } from 'react'
 import './Header.css'
 import NavBar from './Nav/NavBar'
-import GoogleIcon from '@mui/icons-material/Google';
-import FacebookIcon from '@mui/icons-material/Facebook';
 const Header = () => {
   
   const handleSignUpSubmission=(event)=>{
@@ -40,8 +38,8 @@ const Header = () => {
                     <span id='alertMsg'></span>
                     <div><input type="submit" value="Log In"></input></div>
                     <div class="social">
-                      <div class="go"><GoogleIcon/><span>Google</span></div>
-                      <div class="fb"><FacebookIcon/><span>Facebook</span></div>
+                      <div class="go">Google</div>
+                      <div class="fb">Facebook</div>
                     </div>
                  </form>
           </div>

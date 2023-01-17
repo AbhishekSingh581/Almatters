@@ -43,7 +43,7 @@
 #headinginSubHeading div:nth-child(2){
   /* border: 1px solid green; */
   font-size: clamp(2.5rem, 6.5vw + 1rem, 10rem);;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1.5px white;
   font-family: sans-serif;
   color: transparent;
 }
@@ -89,7 +89,15 @@
   border-bottom: 1px solid #ffff;
 }
 #loginForm-Div form input[type="submit"]{
-  border: 1px solid #ffff;
+  /* border: 1px solid #ffff; */
+  background: #FF033E;
+  border-style: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  
+
 }
 #loginForm  input[type="submit"]:hover{
   background-color: rgba(255,255,255,0.47);
@@ -106,9 +114,12 @@
   width: 150px;
   border-radius: 3px;
   padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
+  background-color: rgb(32, 117, 254,0.6);
   color: #eaf0fb;
   text-align: center;
+  margin: clamp(0.2rem,0.5rem,1rem);
+  font-size: clamp(0.5rem,1rem,2rem);
+  font-weight: 600;
   }
   .social div:hover{
   background-color: rgba(255,255,255,0.47);
