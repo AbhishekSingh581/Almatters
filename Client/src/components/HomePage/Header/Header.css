@@ -100,7 +100,7 @@
 
 }
 #loginForm  input[type="submit"]:hover{
-  background-color: rgba(255,255,255,0.47);
+  background-color: #e34c6f;
 
 }
 .social{
@@ -114,7 +114,7 @@
   width: 150px;
   border-radius: 3px;
   padding: 5px 10px 10px 5px;
-  background-color: rgb(32, 117, 254,0.6);
+  background-color: #2075fe99;
   color: #eaf0fb;
   text-align: center;
   margin: clamp(0.2rem,0.5rem,1rem);
@@ -122,5 +122,5 @@
   font-weight: 600;
   }
   .social div:hover{
-  background-color: rgba(255,255,255,0.47);
+  background-color: #548ce7d2;
   }
