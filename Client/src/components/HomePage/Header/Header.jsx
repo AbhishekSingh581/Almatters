@@ -1,7 +1,6 @@
 import React from 'react'
 // import { useState } from 'react'
 import './Header.css'
-import NavBar from './Nav/NavBar'
 const Header = () => {
   
   const handleSignUpSubmission=(event)=>{
@@ -18,7 +17,6 @@ const Header = () => {
   }
   return (
       <div id="header-main-container">
-        <NavBar/>        
         <div id='header-flex'>
           <div id="headinginSubHeading">
             <div data-aos="fade-left">Nobody is bothered about an institution</div>
